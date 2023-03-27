@@ -1,0 +1,37 @@
+@use '../utilities' as *;
+
+/*______________________________________________________________________
+  ------------------------------ COLORS --------------------------------
+  ______________________________________________________________________ */
+
+/* Main Colors
+----------------------------------*/
+$primaryColor: #052340; // Change to your Primary Color
+$secondaryColor: #006f4e; // Change to your Secondary Color
+$tertiaryColor: #005074; // Change to your Secondary Color
+
+/* Neutral Colors
+----------------------------------*/
+$lightColor: #ffffff; // Change to your White Color
+$darkColor: #000000; // Change to your Black Color
+
+/* General Colors
+----------------------------------*/
+$bodyBackgroundColor: $lightColor;
+$bodyTextColor: colorContrast($bodyBackgroundColor, $lightColor, $primaryColor);
+
+$navBackgroundColor: $bodyBackgroundColor;
+$navTextColor: colorContrast($navBackgroundColor, $lightColor, $primaryColor);
+
+$headerBackgroundColor: $primaryColor;
+$headerTextColor: colorContrast($headerBackgroundColor, $lightColor, $primaryColor);
+
+$footerBackgroundColor: $bodyBackgroundColor;
+$footerTextColor: colorContrast($footerBackgroundColor, $lightColor, $primaryColor);
+
+$blockColor: (
+  'Block-1': $primaryColor,
+  'Block-2': $lightColor,
+  'Block-3': $secondaryColor,
+  'Block-4': $tertiaryColor,
+);

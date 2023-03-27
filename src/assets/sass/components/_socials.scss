@@ -1,0 +1,72 @@
+@use '../theme' as *;
+@use '../utilities' as *;
+
+.socials {
+  display: flex;
+  align-items: center;
+  gap: rem(10);
+
+  .navigation & {
+    display: flex;
+
+    @include mq($ps-mobile) {
+      display: none;
+    }
+  }
+
+  &-mobile {
+    display: none;
+
+    @include mq($ps-mobile) {
+      display: flex;
+    }
+  }
+
+  .social {
+    --focus-color: #{$primaryColor};
+
+    position: relative;
+    isolation: isolate;
+    inline-size: rem(30);
+    aspect-ratio: 1/1;
+    border: rem(1) solid currentColor;
+    border-radius: 50%;
+
+    &::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      border-radius: inherit;
+      background-color: $primaryColor;
+      transform: scale(0);
+      transition: transform $transition-in-out;
+      z-index: -1;
+    }
+
+    a {
+      display: grid;
+      place-items: center;
+      inline-size: 100%;
+      block-size: 100%;
+    }
+
+    .fa-brands {
+      font-size: 1em;
+
+      @include mq($ps-mobile) {
+        font-size: rem(18);
+      }
+    }
+
+    &:hover,
+    &:focus,
+    &:focus-within {
+      color: $lightColor;
+      border-color: $primaryColor;
+
+      &::before {
+        transform: scale(1);
+      }
+    }
+  }
+}

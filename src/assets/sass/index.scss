@@ -1,0 +1,31 @@
+@forward 'layout/main';
+@forward 'helpers/main';
+@forward 'components/main';
+
+@keyframes bounce-left {
+  0% {
+    translate: 0;
+  }
+
+  50% {
+    translate: -8px 0;
+  }
+
+  100% {
+    translate: 0;
+  }
+}
+
+@keyframes bounce-down {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-8px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}

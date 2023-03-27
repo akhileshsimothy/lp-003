@@ -1,0 +1,183 @@
+{
+  "skip-link": {
+    "nav": {
+      "label": "Aller vers la navigation",
+
+      "text": "Aller vers nav"
+    },
+
+    "content": {
+      "label": "Aller vers le contenu",
+
+      "text": "Aller vers contenu"
+    }
+  },
+
+  "head": {
+    "title": "Oceanus"
+  },
+
+  "logo": {
+    "slogan": "Le leader de la technologie",
+
+    "alt": "Oceanus, Le leader de la technologie, Aller sur la page d'accueil"
+  },
+
+  "btn": {
+    "text": "En savoir plus"
+  },
+
+  "navigation": {
+    "lang": {
+      "fr": {
+        "alt": "Aller sur la version Française",
+
+        "current": "page",
+
+        "class": "lang active"
+      },
+
+      "en": {
+        "alt": "Aller sur la version Anglaise",
+
+        "current": null,
+
+        "class": "lang"
+      }
+    },
+
+    "social": {
+      "twitter": {
+        "alt": "Aller sur notre page Twitter, nouvel onglet"
+      },
+
+      "linkedin": {
+        "alt": "Aller sur notre page LinkedIn, nouvel onglet"
+      },
+
+      "instagram": {
+        "alt": "Aller sur notre page Instagram, nouvel onglet"
+      },
+
+      "youtube": {
+        "alt": "Aller sur notre page Youtube, nouvel onglet"
+      }
+    }
+  },
+
+  "header": {
+    "heading": "Rapport Intégré 2022",
+
+    "btn-1": {
+      "alt": "Lire le E-document {nom du document}",
+
+      "text": "Lire le e-document"
+    },
+
+    "btn-2": {
+      "alt": "Télécharger Sample, PDF,  3ko",
+
+      "text": "Télécharger le pdf"
+    }
+  },
+
+  "slider-section": {
+    "heading": "Notre expertise en accessibilité web",
+
+    "slide-1": {
+      "heading": "Malvoyant ou Sénior",
+
+      "text": "Utilisateur dont l’acuité visuelle à cinq mètres est inférieure à 4/10e. Il utilise des outils de grossissement de caractères ou de synthèse vocale.",
+
+      "btn-alt": null
+    },
+
+    "slide-2": {
+      "heading": "Non-voyant",
+
+      "text": "Utilisateur atteint d’une déficience visuelle totale. Il utilise des lecteurs d’écran combinés avec une plage braille",
+
+      "btn-alt": null
+    },
+
+    "slide-3": {
+      "heading": "L’accessibilité numérique est un droit",
+
+      "text": "Grâce à un panel complet de fonctionnalités, PubliSpeak™ répond aux enjeux d’image de marque, de visibilité et d’acquisition d’audience.",
+
+      "btn-alt": null
+    },
+
+    "slide-4": {
+      "heading": "Une obligation légale",
+
+      "text": "Ce schéma pluriannuel, d’une durée maximum de 3 ans, définit toutes les actions en faveur de l’accessibilité numérique mise en place annuellement.",
+
+      "btn-alt": null
+    },
+
+    "slide-5": {
+      "heading": "Améliorez votre référencement",
+
+      "text": "L’accessibilité facilite l’accès au contenu pour tous les utilisateurs, y compris pour les moteurs de recherche.",
+
+      "btn-alt": null
+    }
+  },
+
+  "block-section": {
+    "heading": "Accompagner vos projets",
+
+    "block-1": {
+      "heading": "Accédez au marché des seniors",
+
+      "text": "Une interface accessible s’avère en général plus ergonomique et plus simple d’utilisation que ses concurrents non accessibles.",
+
+      "btn-alt": "En savoir plus sur Accédez au marché des seniors"
+    },
+
+    "block-2": {
+      "heading": "Valorisez votre image citoyenne",
+
+      "text": "Investir dans l'accessibilité numérique c’est aussi valoriser votre marque employeur pour attirer les meilleurs talents.",
+
+      "btn-alt": "En savoir plus sur Valorisez votre image citoyenne"
+    },
+
+    "block-3": {
+      "heading": "Améliorez votre référencement naturel",
+
+      "text": "L’accessibilité facilite l’accès au contenu pour tous les utilisateurs, y compris pour les moteurs de recherche. De nombreux critères d'accessibilité rejoignent le SEO",
+
+      "btn-alt": "En savoir plus sur Améliorez votre référencement naturel"
+    },
+
+    "block-4": {
+      "heading": "Réduisez les coûts de maintenance",
+
+      "text": "Un peu de technique… L’une des règles de l’accessibilité est la séparation stricte du contenu et de sa présentation",
+
+      "btn-alt": "En savoir plus sur Réduisez les coûts de maintenance"
+    }
+  },
+
+  "accessiblity": {
+    "icon-1": {
+      "alt": "Handicap Auditif"
+    },
+
+    "icon-2": {
+      "alt": "Handicap Auditif"
+    },
+
+    "icon-3": {
+      "alt": "Handicap Auditif"
+    }
+  },
+
+  "footer": {
+    "link": {
+      "alt": "PUBLISPEAK.COM, nouvel onglet"
+    }
+  }
+}

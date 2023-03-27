@@ -1,0 +1,150 @@
+@use '../theme' as *;
+@use '../utilities' as *;
+
+.header {
+  .container {
+    --max-width: 100%;
+    display: flex;
+    padding-inline: 0;
+
+    @include mq($ps-tablet) {
+      flex-direction: column-reverse;
+      padding-inline: $containerPadding;
+    }
+
+    @include mq($ps-mobile) {
+      padding-inline: 0;
+    }
+  }
+
+  &__left {
+    background-color: $headerBackgroundColor;
+    color: $headerTextColor;
+    flex: 1;
+    flex-basis: 40.625%;
+    align-self: center;
+    padding-block: rem(140);
+    padding-inline: rem(215);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: rem(80);
+
+    @include mq($ps-tablet) {
+      inline-size: 100%;
+      flex-basis: 100%;
+      padding-block: rem(70);
+      padding-inline: rem(100);
+    }
+
+    @include mq($ps-mobile) {
+      padding-block: rem(40);
+      padding-inline: rem(50);
+      gap: rem(30);
+    }
+
+    .links {
+      font-family: $font-medium;
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      gap: rem(30);
+
+      @include mq($ps-mobile) {
+        gap: rem(20);
+      }
+
+      .btn {
+        inline-size: min(rem(350), 100%);
+        font-size: rem(20);
+        border-radius: rem(100);
+
+        @include mq($ps-mobile) {
+          font-size: rem(16);
+        }
+
+        > span {
+          position: relative;
+          isolation: isolate;
+
+          &::before {
+            content: '';
+            position: absolute;
+            inset-inline: 0;
+            inset-block-end: em(-2);
+            inline-size: 0;
+            block-size: rem(2);
+            background-color: currentColor;
+            transition: inline-size $transition-in-out;
+            z-index: -1;
+          }
+        }
+
+        &:hover,
+        &:focus {
+          img {
+            animation: bounce-down 1s ease-in-out infinite;
+          }
+
+          .fa-solid {
+            animation: none;
+          }
+
+          > span {
+            &::before {
+              inline-size: 100%;
+            }
+          }
+        }
+      }
+    }
+
+    .accessibility {
+      P {
+        font-size: rem(20);
+        text-align: center;
+        margin-block-end: rem(15);
+
+        @include mq($ps-mobile) {
+          font-size: rem(16);
+        }
+      }
+
+      .icons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+          block-size: 100%;
+          inline-size: auto;
+          max-inline-size: 100%;
+          max-block-size: 100%;
+          aspect-ratio: 1/1;
+
+          &:nth-of-type(2) {
+            aspect-ratio: 3/2;
+          }
+        }
+      }
+    }
+  }
+
+  &__right {
+    flex: 1;
+    flex-basis: auto;
+
+    @include mq($ps-tablet) {
+      inline-size: 100%;
+      flex-basis: 100%;
+    }
+
+    img {
+      inline-size: 100%;
+      block-size: 100%;
+      max-inline-size: 100%;
+      max-block-size: 100%;
+      object-fit: cover;
+    }
+  }
+}

@@ -1,0 +1,32 @@
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/Inter-Regular.ttf') format('TrueType');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter Medium';
+  src: url('../fonts/Inter-Medium.ttf') format('TrueType');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter Heavy';
+  src: url('../fonts/Inter-Bold.ttf') format('TrueType');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Catamaran Regular';
+  src: url('../fonts/Catamaran-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+$font-regular: 'Inter', 'sans-serif';
+$font-medium: 'Inter Medium', 'sans-serif';
+$font-heavy: 'Inter Heavy', 'sans-serif';
+$secondary-font: 'Catamaran Regular', 'sans-serif';

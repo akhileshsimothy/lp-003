@@ -1,0 +1,84 @@
+@use '../theme' as *;
+@use '../utilities' as *;
+
+.logo {
+  block-size: 100%;
+  display: flex;
+  gap: rem(20);
+
+  @include mq($ps-mobile) {
+    gap: rem(12);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .navigation & {
+    display: flex;
+
+    @include mq($ps-tablet) {
+      display: none;
+    }
+
+    @include mq($ps-mobile) {
+      display: flex;
+    }
+  }
+
+  &-tablet {
+    display: none;
+
+    @include mq($ps-tablet) {
+      display: flex;
+      padding-block: rem(40);
+    }
+
+    @include mq($ps-mobile) {
+      display: none;
+    }
+  }
+
+  img {
+    inline-size: auto;
+    block-size: 100%;
+    max-inline-size: 100%;
+    max-block-size: rem(75);
+
+    footer & {
+      @include mq($ps-tablet) {
+        max-block-size: rem(38.55);
+      }
+
+      @include mq($ps-mobile) {
+        max-inline-size: rem(250);
+        max-block-size: 100%;
+      }
+    }
+  }
+
+  &__name {
+    font-family: $secondary-font;
+    align-self: center;
+    font-size: rem(24);
+    line-height: normal;
+    text-transform: uppercase;
+
+    @include mq($ps-tablet) {
+      font-size: rem(18);
+      text-align: center;
+    }
+
+    footer & {
+      font-size: rem(20);
+
+      @include mq($ps-tablet) {
+        font-size: rem(12);
+      }
+
+      @include mq($ps-mobile) {
+        font-size: rem(18);
+        text-align: center;
+      }
+    }
+  }
+}

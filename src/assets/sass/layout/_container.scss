@@ -1,0 +1,36 @@
+@use '../utilities' as *;
+@use '../theme' as *;
+
+.container {
+  --max-width: #{rem(1675px)};
+
+  // Try to keep 960px max-width until screen is smaller than 960px then switch to 100% max-width and Add padding right and left to container on mobile
+  inline-size: min(100%, var(--max-width));
+  padding-inline: $containerPadding;
+
+  @include not-support('inline-size: 0') {
+    width: min(100%, var(--max-width));
+  }
+
+  @include not-support('padding-inline: 0') {
+    padding-left: $containerPadding;
+    padding-right: $containerPadding;
+  }
+
+  // Margin Left and Right auto
+  margin-inline: auto;
+
+  @include not-support('margin-inline: auto') {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @include mq($ps-mobile) {
+    padding-inline: $containerPaddingMobile;
+
+    @include not-support('padding-inline: 0') {
+      padding-left: $containerPaddingMobile;
+      padding-right: $containerPaddingMobile;
+    }
+  }
+}

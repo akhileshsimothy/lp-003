@@ -1,0 +1,183 @@
+{
+  "skip-link": {
+    "nav": {
+      "label": "Go to navigation",
+
+      "text": "Go to nav"
+    },
+
+    "content": {
+      "label": "Go to content",
+
+      "text": "Go to content"
+    }
+  },
+
+  "head": {
+    "title": "Oceanus"
+  },
+
+  "logo": {
+    "slogan": "The leader in technology",
+
+    "alt": "Oceanus, The leader in technology, Go to home page"
+  },
+
+  "btn": {
+    "text": "Read more"
+  },
+
+  "navigation": {
+    "lang": {
+      "fr": {
+        "alt": "Go to the French version",
+
+        "current": null,
+
+        "class": "lang"
+      },
+
+      "en": {
+        "alt": "Go to the English version",
+
+        "current": "page",
+
+        "class": "lang active"
+      }
+    },
+
+    "social": {
+      "twitter": {
+        "alt": "Go to our Twitter page, new tab"
+      },
+
+      "linkedin": {
+        "alt": "Go to our LinkedIn page, new tab"
+      },
+
+      "instagram": {
+        "alt": "Go to our Instagram page, new tab"
+      },
+
+      "youtube": {
+        "alt": "Go to our Youtube page, new tab"
+      }
+    }
+  },
+
+  "header": {
+    "heading": "Integrated Report 2022",
+
+    "btn-1": {
+      "alt": "Read the E-document {document name}",
+
+      "text": "Read the e-document"
+    },
+
+    "btn-2": {
+      "alt": "Download Sample, PDF,  3kb",
+
+      "text": "Download the pdf"
+    }
+  },
+
+  "slider-section": {
+    "heading": "Our expertise in web accessibility",
+
+    "slide-1": {
+      "heading": "Visually impaired or Senior",
+
+      "text": "User whose visual acuity at five meters is less than 4/10th. Uses character magnification or text-to-speech tools.",
+
+      "btn-alt": null
+    },
+
+    "slide-2": {
+      "heading": "Blind",
+
+      "text": "User with a total visual impairment. He uses screen readers combined with a Braille display",
+
+      "btn-alt": null
+    },
+
+    "slide-3": {
+      "heading": "Digital accessibility is a right",
+
+      "text": "With a full array of features, PubliSpeak™ addresses branding, visibility and audience acquisition issues.",
+
+      "btn-alt": null
+    },
+
+    "slide-4": {
+      "heading": "A legal obligation",
+
+      "text": "This multi-year plan, with a maximum duration of 3 years, defines all the actions in favor of digital accessibility implemented annually.",
+
+      "btn-alt": null
+    },
+
+    "slide-5": {
+      "heading": "Improve your referencing",
+
+      "text": "Accessibility facilitates access to content for all users, including search engines.",
+
+      "btn-alt": null
+    }
+  },
+
+  "block-section": {
+    "heading": "Supporting your projects",
+
+    "block-1": {
+      "heading": "Access the senior market",
+
+      "text": "An accessible interface is generally more ergonomic and easier to use than its non-accessible competitors.",
+
+      "btn-alt": "Learn more about Access the senior market"
+    },
+
+    "block-2": {
+      "heading": "Enhance your image as a citizen",
+
+      "text": "Investing in digital accessibility also means enhancing your employer brand to attract the best talent.",
+
+      "btn-alt": "Learn more about Enhance your corporate image"
+    },
+
+    "block-3": {
+      "heading": "Improve your natural referencing",
+
+      "text": "Accessibility facilitates access to content for all users, including search engines. Many accessibility criteria are linked to SEO",
+
+      "btn-alt": "Learn more about Improve your natural referencing"
+    },
+
+    "block-4": {
+      "heading": "Reduce maintenance costs",
+
+      "text": "One of the rules of accessibility is the strict separation of content and presentation",
+
+      "btn-alt": "Learn more about Reduce Maintenance Costs"
+    }
+  },
+
+  "accessiblity": {
+    "icon-1": {
+      "alt": "Hearing Impairment"
+    },
+
+    "icon-2": {
+      "alt": "Hearing Impairment"
+    },
+
+    "icon-3": {
+      "alt": "Hearing Impairment"
+    }
+  },
+
+  "footer": {
+    "link": {
+      "alt": "PUBLISPEAK.COM, new tab"
+    }
+  }
+}

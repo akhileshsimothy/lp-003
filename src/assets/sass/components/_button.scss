@@ -1,0 +1,48 @@
+@use '../theme' as *;
+@use '../utilities' as *;
+
+.btn {
+  --btn-primary-bg-clr: #{transparent};
+  --btn-primary-txt-clr: #{currentColor};
+
+  display: flex;
+  align-items: center;
+  gap: em(10);
+  inline-size: fit-content;
+  background-color: var(--btn-primary-bg-clr);
+  color: var(--btn-primary-txt-clr);
+  font-size: 1em;
+  text-transform: uppercase;
+  border: em(1) solid var(--btn-primary-txt-clr);
+  border-radius: em(8);
+  padding-inline: em(20);
+  padding-block: em(15);
+
+  &:hover,
+  &:focus {
+    --btn-primary-bg-clr: #{$lightColor};
+    --btn-primary-txt-clr: #{$primaryColor};
+    --focus-color: var(--btn-primary-bg-clr);
+
+    border-color: var(--btn-primary-bg-clr);
+
+    .fa-solid {
+      animation: bounce-left 1s ease-in-out infinite;
+    }
+  }
+
+  &-primary {
+    --btn-primary-bg-clr: #{$lightColor};
+    --btn-primary-txt-clr: #{$primaryColor};
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+
+    &:hover,
+    &:focus {
+      --btn-primary-bg-clr: #{$lightColor};
+      --btn-primary-txt-clr: #{$primaryColor};
+      --focus-color: var(--btn-primary-bg-clr);
+    }
+  }
+}

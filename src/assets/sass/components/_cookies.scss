@@ -1,0 +1,118 @@
+@use '../theme' as *;
+@use '../utilities' as *;
+
+$darken-primary-color: darken($primaryColor, 10);
+
+.cookiesContainer {
+  position: fixed;
+  left: rem(65px);
+  bottom: rem(65px);
+  width: rem(570px);
+  height: auto;
+  border: rem(1px) solid #ecedf2;
+  border-radius: rem(4px);
+  box-shadow: rem(4px) rem(4px) rem(12px) rem(0.5px) rgba(0, 0, 0, 0.1);
+  padding: 0 rem(30px) rem(30px) rem(30px);
+  background-color: #ffffff;
+
+  @include mq($ps-small-tablet) {
+    left: rem(40px);
+    width: rem(450px);
+  }
+
+  @include mq($ps-mobile) {
+    bottom: rem(10px);
+    width: calc(100% - rem(20px));
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 0;
+  }
+
+  @include mq($ps-mobile-landscape) {
+    width: 75%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: rem(4px) rem(4px) 0 0;
+  }
+
+  .desc {
+    color: #818e94;
+    font-family: $font-regular;
+    font-size: rem(16px);
+    text-align: justify;
+    line-height: normal;
+
+    @include mq($ps-mobile) {
+      font-size: rem(14px);
+    }
+
+    &:first-of-type {
+      margin: rem(65px) 0 rem(20px) 0;
+
+      @include mq($ps-mobile) {
+        margin: rem(60px) 0 rem(20px) 0;
+      }
+    }
+
+    &:last-of-type {
+      margin-bottom: rem(35px);
+      @include mq($ps-mobile) {
+        margin-bottom: rem(30px);
+      }
+    }
+  }
+
+  .refuseContinue {
+    position: absolute;
+    top: rem(20px);
+    right: rem(25px);
+    padding: rem(5px);
+    text-decoration: underline;
+    color: $primaryColor;
+    height: unset;
+    text-transform: none;
+    font-family: $font-regular;
+    font-size: rem(16px);
+
+    @media #{$ps-mobile} {
+      font-size: rem(14px);
+      top: rem(15px);
+    }
+  }
+
+  &.remove-modal {
+    display: none;
+  }
+}
+
+.cookie-btn {
+  display: flex;
+
+  button {
+    font-family: $font-medium;
+    font-size: rem(14px);
+    inline-size: rem(140px);
+    block-size: rem(44px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $primaryColor;
+    color: #ffffff;
+    text-transform: none;
+    border: rem(1px) solid transparent;
+    transition: $general-transition;
+    border-radius: rem(4px);
+
+    &:hover,
+    &:focus {
+      background: $darken-primary-color radial-gradient(circle, transparent 1%, $darken-primary-color 1%) center/15000%;
+      border-color: $primaryColor;
+      color: #ffffff;
+      outline: rem(2px) solid #000000;
+    }
+
+    @media only screen and (max-width: 350px) {
+      inline-size: rem(130px);
+    }
+  }
+}
